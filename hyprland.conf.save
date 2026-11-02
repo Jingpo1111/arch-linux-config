@@ -1,0 +1,31 @@
+$mainMod = SUPER
+
+# Super + number → go to that workspace
+bind = $mainMod, 1, workspace, 1
+bind = $mainMod, 2, workspace, 2
+bind = $mainMod, 3, workspace, 3
+bind = $mainMod, 4, workspace, 4
+bind = $mainMod, 5, workspace, 5
+bind = $mainMod, 6, workspace, 6
+bind = $mainMod, 7, workspace, 7
+bind = $mainMod, 8, workspace, 8
+bind = $mainMod, 9, workspace, 9
+
+# Super + Shift + number → move current window to that workspace
+bind = $mainMod SHIFT, 1, movetoworkspace, 1
+bind = $mainMod SHIFT, 2, movetoworkspace, 2
+bind = $mainMod SHIFT, 3, movetoworkspace, 3
+bind = $mainMod SHIFT, 4, movetoworkspace, 4
+bind = $mainMod SHIFT, 5, movetoworkspace, 5
+
+# Super + F → fullscreen toggle (1 = keep your bar, 0 = cover everything)
+bind = $mainMod, F, fullscreen, 1
+
+# Super + Tab → jump back to the previous workspace
+bind = $mainMod, TAB, workspace, previous
+
+# Open apps on their own workspace at login
+exec-once = [workspace 1 silent] firefox
+exec-once = [workspace 2 silent] kitty
+exec-once = [workspace 3 silent] code
+
