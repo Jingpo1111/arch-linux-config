@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Bar pops up (mouse at top) -> apps shrink; bar hides -> apps return
+bar=0
+while true; do
+    y=$(hyprctl cursorpos | cut -d, -f2 | tr -d " ")
+    if [ "$y" -le 3 ] && [ "$bar" -eq 0 ]; then
+        noctalia msg bar-reserve-toggle >/dev/null; bar=1
+    elif [ "$y" -gt 80 ] && [ "$bar" -eq 1 ]; then
+        noctalia msg bar-reserve-toggle >/dev/null; bar=0
+    fi
+    sleep 0.05
+done

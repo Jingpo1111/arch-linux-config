@@ -4,8 +4,8 @@ hl.config({
         kb_layout = "us,kh",
         kb_options = "grp:alt_shift_toggle",
         numlock_by_default = true,
-        repeat_delay = 250,
-        repeat_rate = 35,
+        repeat_delay = 400,
+        repeat_rate = 25,
 
         -- Mouse
         accel_profile = "flat",

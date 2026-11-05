@@ -1,0 +1,3 @@
+[hooks]
+started = ["setsid -f /home/jingpo/.local/bin/ws-compact-daemon", "/home/jingpo/.local/bin/refresh-by-power", "setsid -f /home/jingpo/.local/bin/bar-resize"]
+battery_state_changed = "/home/jingpo/.local/bin/refresh-by-power"

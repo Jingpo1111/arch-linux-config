@@ -1,0 +1,50 @@
+[
+  {
+    "file": "/home/jingpo/.config/fish/conf.d/gui-apps.fish",
+    "original": "/home/jingpo/.config/hypr/backups/arch-opt-20261105-114657/.config/fish/conf.d/gui-apps.fish",
+    "original_sha256": "44816b820c52f9d8c67bfd97c5fb34c3bdb9230b06ba24ef1063271e4bd60c08",
+    "installed_sha256": "706db96b1c857f13dea355785508b95d9aaadd902c4b94d75ad29ea5a118c9ed"
+  },
+  {
+    "file": "/home/jingpo/.config/fish/conf.d/zz-look.fish",
+    "original": "/home/jingpo/.config/hypr/backups/arch-opt-20261105-114657/.config/fish/conf.d/zz-look.fish",
+    "original_sha256": "c987221782b73bfb08d8c599cf0a8d558161cd9dc5a806b1d0e973d401107d69",
+    "installed_sha256": "adc6ad71465661df8f1ef5918b13bbef278209261e0dd768496a9da5b73b9182"
+  },
+  {
+    "file": "/home/jingpo/.config/fish/conf.d/jingpo-tools.fish",
+    "original": "/home/jingpo/.config/hypr/backups/arch-opt-20261105-114657/.config/fish/conf.d/jingpo-tools.fish",
+    "original_sha256": "6e8fce001ce535291f52baf71495bb0c15a6b3ffc6c701d8dc2c477b3c5f6ccd",
+    "installed_sha256": "978acc7f204b4f54f0306d585e3441f925ff2e82e3a1257d8cc1ef04900670ec"
+  },
+  {
+    "file": "/home/jingpo/.config/fish/conf.d/nav-tools.fish",
+    "original": "/home/jingpo/.config/hypr/backups/arch-opt-20261105-114657/.config/fish/conf.d/nav-tools.fish",
+    "original_sha256": "b3e67783020e1e26e891d3d635500c961cd199bd61dca5ee42bec66566f24b50",
+    "installed_sha256": "19bd6278046d767314ef17f4f34c9333fd6c0a8a1b20d73ea97899936668b21c"
+  },
+  {
+    "file": "/home/jingpo/.config/fish/conf.d/zz-autorun.fish",
+    "original": "/home/jingpo/.config/hypr/backups/arch-opt-20261105-114657/.config/fish/conf.d/zz-autorun.fish",
+    "original_sha256": "2cf20d63c8b5a74d5d7b1daf113323ee94fe9240eb819293956376f74aa6f78d",
+    "installed_sha256": "6d8f8723db0d5218327727975ed2a014725d1f6632e766dc97ecf62ec647af0a"
+  },
+  {
+    "file": "/home/jingpo/.config/kitty/kitty.conf",
+    "original": "/home/jingpo/.config/hypr/backups/arch-opt-20261105-114657/.config/kitty/kitty.conf",
+    "original_sha256": "dc3edff8dfdc00edb1a3360befcd5d1631353f7dd2f9daa98a43a9adf08b8ffd",
+    "installed_sha256": "bf0cb9375948079eceff82953ad931b0feb633ea4fd8a1915cf016432fc30d93"
+  },
+  {
+    "file": "/home/jingpo/.config/noctalia/zz-hooks.toml",
+    "original": "/home/jingpo/.config/hypr/backups/arch-opt-20261105-114657/.config/noctalia/zz-hooks.toml",
+    "original_sha256": "f7b92b217cb976a27a0984548927e579840da370c30eac5692e001f37ad275fd",
+    "installed_sha256": "dd9916dd36eb5e7c713db2cbcd8e5e4eca5ea6083e543365be50f2e6445cd45e"
+  },
+  {
+    "file": "/home/jingpo/.local/bin/bar-resize",
+    "original": "/home/jingpo/.config/hypr/backups/arch-opt-20261105-114657/.local/bin/bar-resize",
+    "original_sha256": "8e312878aa4fcfc339b06c32c31ffb1022ed65e789e5b73de011076254c0ad6e",
+    "installed_sha256": "938434f8eb46b69e379010da2e97bbae4c3b6d510b00a17b37a7b64d9956a31f"
+  }
+]
