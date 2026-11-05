@@ -5,14 +5,23 @@ package.path = table.concat({
     package.path,
 }, ";")
 
--- Clear cached modules so they re-execute on reload (ensures binds/rules re-register)
-for _, mod in ipairs({"monitors", "inputs", "keybind", "windowrules", "animations", "themes.theme"}) do
+-- Reload configuration modules when the Lua state is reused.
+for _, mod in ipairs({
+    "monitors",
+    "keybind",
+    "windowrules",
+    "animations",
+    "animations.default",
+    "themes.theme",
+    "noctalia",
+    "input-gestures",
+    "one-app",
+}) do
     package.loaded[mod] = nil
 end
 
 require("monitors")
 require("startup")
-require("inputs")
 require("keybind")
 require("windowrules")
 require("animations")
@@ -47,13 +56,6 @@ require("noctalia").apply_theme()
 
 
 
--- Khmer keyboard: Alt+Shift to switch EN/KH
-hl.config({
-    input = {
-        kb_layout = "us,kh",
-        kb_options = "grp:alt_shift_toggle",
-    },
-})
 
 -- Clicking a notification brings its app/tab to the front
 hl.config({
@@ -64,8 +66,8 @@ hl.config({
 
 -- Wallpaper shortcuts
 hl.bind("SUPER + W", hl.dsp.exec_cmd("/home/jingpo/.local/bin/wall-picker"), { description = "Wallpaper picker" })
-hl.bind("SUPER + SHIFT + right", hl.dsp.exec_cmd("noctalia msg wallpaper-next"), { description = "Next wallpaper" })
-hl.bind("SUPER + SHIFT + left", hl.dsp.exec_cmd("noctalia msg wallpaper-previous"), { description = "Previous wallpaper" })
+hl.bind("SUPER + ALT + right", hl.dsp.exec_cmd("noctalia msg wallpaper-next"), { description = "Next wallpaper" })
+hl.bind("SUPER + ALT + left", hl.dsp.exec_cmd("noctalia msg wallpaper-previous"), { description = "Previous wallpaper" })
 hl.bind("SUPER + SHIFT + W", hl.dsp.exec_cmd("noctalia msg wallpaper-random"), { description = "Random wallpaper" })
 
 -- Input + gestures (loaded safely: errors here will not break other binds)

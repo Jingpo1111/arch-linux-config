@@ -39,6 +39,3 @@ hl.window_rule({
     match = { class = "^(kitty)$" },
     suppress_event = "fullscreen maximize",
 })
-
--- Tiling layout
-hl.config({ general = { layout = "dwindle" } })

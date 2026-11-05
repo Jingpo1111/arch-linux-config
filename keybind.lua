@@ -23,10 +23,9 @@ local KEY = {
 	VIDEO = ("%s + V"):format(mainMod),
 
 	CLOSE = ("%s + Q"):format(mainMod),
-	FLOAT = ("%s + W"):format(mainMod),
+	FLOAT = ("%s + SHIFT + F"):format(mainMod),
 	FULLSCREEN = ("%s + F"):format(mainMod),
 
-	WORKSPACE_NEXT_MONITOR = ("%s + CTRL + tab"):format(mainMod),
 	WORKSPACE_PREV_MONITOR = ("%s + SHIFT + tab"):format(mainMod),
 
 	FOCUS_LEFT = ("%s + left"):format(mainMod),
@@ -56,7 +55,6 @@ local KEY = {
 
 	MOUSE_DRAG = ("%s + mouse:272"):format(mainMod),
 	MOUSE_RESIZE = ("%s + mouse:273"):format(mainMod),
-	RESIZE_MODE = ("%s + X"):format(mainMod),
 }
 
 -- 1. Applications
@@ -80,7 +78,6 @@ hl.bind(KEY.FLOAT, hl.dsp.window.float({ action = "toggle" }), { description = "
 hl.bind(KEY.FULLSCREEN, hl.dsp.window.fullscreen(), { description = "Toggle fullscreen" })
 
 -- 4. Window Navigation & Layout
-hl.bind(KEY.WORKSPACE_NEXT_MONITOR, hl.dsp.exec_cmd(scrPath .. "/workspace.sh"), { description = "Next workspace on monitor" })
 hl.bind(KEY.WORKSPACE_PREV_MONITOR, hl.dsp.focus({ workspace = "m-1" }), { description = "Previous workspace on monitor" })
 
 hl.bind(KEY.FOCUS_LEFT, hl.dsp.focus({ direction = "left" }), { description = "Focus left" })
@@ -171,7 +168,6 @@ hl.bind(KEY.SCROLL_WORKSPACE_PREV, hl.dsp.focus({ workspace = "e-1" }), { descri
 -- 10. Mouse Window Management
 hl.bind(KEY.MOUSE_DRAG, hl.dsp.window.drag(),   { mouse = true, description = "Drag window" })
 hl.bind(KEY.MOUSE_RESIZE, hl.dsp.window.resize(), { mouse = true, description = "Resize window" })
-hl.bind(KEY.RESIZE_MODE, hl.dsp.window.resize(), { description = "Resize mode" })
 
 
 hl.bind("XF86MonBrightnessUp",   hl.dsp.exec_cmd("noctalia msg brightness-up 5%"),   { locked = true, description = "Brightness up" })
@@ -182,24 +178,15 @@ hl.bind("XF86AudioNext",        hl.dsp.exec_cmd("noctalia msg media next"),     
 hl.bind("XF86AudioPrev",        hl.dsp.exec_cmd("noctalia msg media previous"),   { locked = true, description = "Previous track" })
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume -l 1.2 @DEFAULT_AUDIO_SINK@ 5%+ && noctalia msg volume-osd"), { locked = true, repeating = true, description = "Volume up (max 120%)" })
 hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- && noctalia msg volume-osd"), { locked = true, repeating = true, description = "Volume down" })
---hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"), { locked = true, description = "Volume Up" })
---hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"), { locked = true, description = "Volume Down" })
---hl.bind("XF86AudioPlay",        hl.dsp.exec_cmd("playerctl play-pause"),                      { locked = true, description = "Play" })
 --hl.bind("XF86AudioMute", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"), { locked = true, description = "Volume Mute" })
 
 
-hl.bind("SUPER + L", hl.dsp.exec_cmd("noctalia msg session lock"), { description = "Lock screen" })
 
 
-hl.bind("SUPER + L", hl.dsp.exec_cmd("noctalia msg session lock"), { description = "Lock screen" })
 hl.bind("CTRL + SHIFT + Escape", hl.dsp.exec_cmd("/home/jingpo/.local/bin/btop-toggle"), { description = "Task manager (btop)" })
 hl.bind("SUPER + SHIFT + M", hl.dsp.exec_cmd("/home/jingpo/.local/bin/close-all"), { description = "Close all windows" })
 hl.bind("SUPER + SHIFT + N", hl.dsp.exec_cmd("noctalia msg panel-toggle control-center"), { description = "Control Center" })
 hl.bind("XF86PowerOff", hl.dsp.exec_cmd("noctalia msg session lock-and-suspend"), { description = "Power button = lock + sleep" })
-hl.bind("SUPER + CTRL + right", hl.dsp.window.resize({ x = 40, y = 0, relative = true }), { repeating = true, description = "Wider" })
-hl.bind("SUPER + CTRL + left", hl.dsp.window.resize({ x = -40, y = 0, relative = true }), { repeating = true, description = "Narrower" })
-hl.bind("SUPER + CTRL + down", hl.dsp.window.resize({ x = 0, y = 40, relative = true }), { repeating = true, description = "Taller" })
-hl.bind("SUPER + CTRL + up", hl.dsp.window.resize({ x = 0, y = -40, relative = true }), { repeating = true, description = "Shorter" })
 return true
 
 

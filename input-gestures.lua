@@ -23,12 +23,6 @@ hl.config({
     },
 })
 
--- Touchpad only: faster, with acceleration
-hl.device({
-    name = "YOUR-TOUCHPAD-NAME",
-    accel_profile = "adaptive",
-    sensitivity = 0.9,
-})
 
 -- Floating -> Tiled -> Fullscreen
 local function window_step_up()

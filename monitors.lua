@@ -5,8 +5,6 @@ hl.monitor({
     mode = "1920x1080@120.0",
     position = "0x0",
     scale = 1.0,
-    bitdepth = 10,
-    cm = "hdr",
     sdrbrightness = 1.2,
     vrr = 0
 })
