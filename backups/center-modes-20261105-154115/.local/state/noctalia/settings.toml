@@ -1,0 +1,239 @@
+config_version = 16
+
+[accessibility]
+ui_scale = 1.1500000096857548
+
+[audio]
+enable_notification_sounds = false
+enable_power_sounds = false
+enable_sounds = true
+enable_volume_sounds = false
+sound_volume = 0.51999998837709427
+
+[bar.default]
+layer = "overlay"
+reserve_space = false
+show_on_workspace_switch = false
+smart_auto_hide = true
+
+[brightness]
+sync_all_monitors = true
+
+[desktop_widgets]
+schema_version = 2
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget]
+
+[location]
+auto_locate = true
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [
+    "lockscreen-login-box@Virtual-1",
+    "lockscreen-login-box@eDP-1",
+    "lockscreen-login-box@HDMI-A-1",
+    "lockscreen-login-box@WAYLAND-1"
+]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "HDMI-A-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@Virtual-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 954.00006103515625
+    cy = 842.0
+    output = "Virtual-1"
+    placement_height = 1024.0
+    placement_width = 1908.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@Virtual-1".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@WAYLAND-1"]
+    box_height = 196.0
+    box_width = 442.0
+    cx = 237.0
+    cy = 324.0
+    output = "WAYLAND-1"
+    placement_height = 506.0
+    placement_width = 474.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@WAYLAND-1".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 898.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[shell]
+panel_anchor_bar = "default"
+
+    [shell.animation]
+    speed = 0.80000001192092896
+
+    [shell.launcher]
+    app_grid = true
+    search_position = "top"
+
+    [[shell.session.actions]]
+    action = "lock"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "1"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "logout"
+    countdown_seconds = 0.0
+    enabled = false
+    shortcut = "2"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "lock_and_suspend"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "3"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "shutdown"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "5"
+    variant = "destructive"
+
+    [[shell.session.actions]]
+    action = "reboot"
+    countdown_seconds = 0.0
+    enabled = true
+    shortcut = "4"
+    variant = "default"
+
+    [shell.shadow]
+    alpha = 0.5599999874830246
+
+[system.monitor]
+net_rx_critical_threshold = 100.0
+net_tx_critical_threshold = 100.0
+
+[theme]
+builtin = "Noctalia"
+community_palette = "GruvboxAlt"
+mode = "dark"
+source = "builtin"
+wallpaper_scheme = "m3-content"
+
+    [theme.templates]
+    builtin_ids = [ "gtk3", "gtk4", "hyprland", "kcolorscheme", "kitty", "qt" ]
+    community_ids = [ "siyuan" ]
+
+[wallpaper]
+fill_mode = "stretch"
+
+    [wallpaper.default]
+    path = "/home/jingpo/Pictures/Wallpapers/sasuke-uchiha-5120x2880-17605.png"
+
+    [wallpaper.last]
+    path = "/home/jingpo/Pictures/Wallpapers/sasuke-uchiha-5120x2880-17605.png"
+
+    [wallpaper.monitors.HDMI-A-1]
+    path = "/home/jingpo/Pictures/Wallpapers/sasuke-uchiha-5120x2880-17605.png"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/jingpo/Pictures/Wallpapers/sasuke-uchiha-5120x2880-17605.png"

@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Bar pops up (mouse at top) -> apps shrink; bar hides -> apps return.
+# Keep one watcher when Noctalia restarts, and avoid cut/tr on every poll.
+exec 9>"${XDG_RUNTIME_DIR:?}/bar-resize.lock"
+flock -n 9 || exit 0
+
+bar=0
+while true; do
+    if pos=$(hyprctl cursorpos 2>/dev/null); then
+        y=${pos#*,}
+        y=${y//[[:space:]]/}
+        if [[ $y =~ ^-?[0-9]+$ ]]; then
+            if (( y <= 3 && bar == 0 )); then
+                if noctalia msg bar-reserve-toggle >/dev/null; then bar=1; fi
+            elif (( y > 80 && bar == 1 )); then
+                if noctalia msg bar-reserve-toggle >/dev/null; then bar=0; fi
+            fi
+        fi
+    fi
+    sleep 0.05
+done

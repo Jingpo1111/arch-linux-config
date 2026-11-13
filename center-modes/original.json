@@ -1,0 +1,160 @@
+{
+  "backup": "/home/jingpo/.config/hypr/backups/center-modes-20261105-154115",
+  "bar": {
+    "auto_hide": false,
+    "auto_hide_delay_ms": 0,
+    "background_opacity": 0.0,
+    "border": "outline_variant",
+    "border_width": 0.0,
+    "capsule": false,
+    "capsule_border_width": 1.0,
+    "capsule_fill": "surface_container",
+    "capsule_opacity": 1.0,
+    "capsule_padding": 6.0,
+    "capsule_thickness": 0.800000011920929,
+    "center": [
+      "group:apps",
+      "group:stats"
+    ],
+    "compositor_blur": false,
+    "concave_edge_corners": false,
+    "contact_shadow": false,
+    "enabled": true,
+    "end": [
+      "group:tools",
+      "group:batt",
+      "group:end"
+    ],
+    "font_family": "Inter",
+    "font_scale": 1.0,
+    "font_weight": 600,
+    "hover_highlight": true,
+    "layer": "overlay",
+    "margin_edge": 8,
+    "margin_ends": 10,
+    "margin_opposite_edge": 0,
+    "padding": 0,
+    "panel_overlap": 1,
+    "position": "top",
+    "radius": 12,
+    "radius_bottom_left": 12,
+    "radius_bottom_right": 12,
+    "radius_top_left": 12,
+    "radius_top_right": 12,
+    "reserve_space": false,
+    "scale": 1.0,
+    "shadow": false,
+    "show_on_workspace_switch": false,
+    "show_tooltip": true,
+    "smart_auto_hide": true,
+    "start": [
+      "group:time"
+    ],
+    "thickness": 44,
+    "widget_spacing": 6,
+    "dead_zone": {
+      "click_through": false
+    },
+    "capsule_group": [
+      {
+        "accordion": false,
+        "accordion_direction": "end",
+        "border": "outline_variant",
+        "border_width": 1.0,
+        "enabled": true,
+        "fill": "surface_container",
+        "id": "apps",
+        "members": [
+          "launcher",
+          "workspaces",
+          "taskbar"
+        ],
+        "opacity": 0.8199999928474426,
+        "padding": 10.0,
+        "widget_spacing": 10
+      },
+      {
+        "accordion": false,
+        "accordion_direction": "end",
+        "border": "outline_variant",
+        "border_width": 1.0,
+        "enabled": true,
+        "fill": "surface_container",
+        "id": "stats",
+        "members": [
+          "sysmon"
+        ],
+        "opacity": 0.8199999928474426,
+        "padding": 10.0
+      },
+      {
+        "accordion": false,
+        "accordion_direction": "end",
+        "border": "outline_variant",
+        "border_width": 1.0,
+        "enabled": true,
+        "fill": "surface_container",
+        "id": "time",
+        "members": [
+          "clock",
+          "weather"
+        ],
+        "opacity": 0.8199999928474426,
+        "padding": 14.0,
+        "widget_spacing": 10
+      },
+      {
+        "accordion": false,
+        "accordion_direction": "end",
+        "border": "outline_variant",
+        "border_width": 1.0,
+        "enabled": true,
+        "fill": "surface_container",
+        "id": "tools",
+        "members": [
+          "media",
+          "volume",
+          "eq",
+          "network",
+          "bluetooth",
+          "screenshot",
+          "wallpaper"
+        ],
+        "opacity": 0.8199999928474426,
+        "padding": 10.0,
+        "widget_spacing": 12
+      },
+      {
+        "accordion": false,
+        "accordion_direction": "end",
+        "border": "outline_variant",
+        "border_width": 1.0,
+        "enabled": true,
+        "fill": "surface_container",
+        "id": "batt",
+        "members": [
+          "battery"
+        ],
+        "opacity": 0.8199999928474426,
+        "padding": 10.0
+      },
+      {
+        "accordion": false,
+        "accordion_direction": "end",
+        "border": "outline_variant",
+        "border_width": 1.0,
+        "enabled": true,
+        "fill": "surface_container",
+        "id": "end",
+        "members": [
+          "notifications",
+          "control-center",
+          "session"
+        ],
+        "opacity": 0.8199999928474426,
+        "padding": 10.0,
+        "widget_spacing": 12
+      }
+    ]
+  }
+}

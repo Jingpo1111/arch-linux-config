@@ -1,0 +1,14 @@
+# Managed by n-center / o-center. Do not edit this generated file.
+[shell.panel]
+transparency_mode = "solid"
+
+[bar.default.monitor."eDP-1"]
+match = "eDP-1"
+enabled = true
+auto_hide = false
+smart_auto_hide = false
+reserve_space = true
+layer = "overlay"
+show_on_workspace_switch = false
+background_opacity = 1.0
+capsule_group = [{ "accordion" = false, "accordion_direction" = "end", "border" = "outline_variant", "border_width" = 1.0, "enabled" = true, "fill" = "surface_container", "id" = "apps", "members" = ["launcher", "workspaces", "taskbar"], "opacity" = 1.0, "padding" = 10.0, "widget_spacing" = 10 }, { "accordion" = false, "accordion_direction" = "end", "border" = "outline_variant", "border_width" = 1.0, "enabled" = true, "fill" = "surface_container", "id" = "stats", "members" = ["sysmon"], "opacity" = 1.0, "padding" = 10.0 }, { "accordion" = false, "accordion_direction" = "end", "border" = "outline_variant", "border_width" = 1.0, "enabled" = true, "fill" = "surface_container", "id" = "time", "members" = ["clock", "weather"], "opacity" = 1.0, "padding" = 14.0, "widget_spacing" = 10 }, { "accordion" = false, "accordion_direction" = "end", "border" = "outline_variant", "border_width" = 1.0, "enabled" = true, "fill" = "surface_container", "id" = "tools", "members" = ["media", "volume", "eq", "network", "bluetooth", "screenshot", "wallpaper"], "opacity" = 1.0, "padding" = 10.0, "widget_spacing" = 12 }, { "accordion" = false, "accordion_direction" = "end", "border" = "outline_variant", "border_width" = 1.0, "enabled" = true, "fill" = "surface_container", "id" = "batt", "members" = ["battery"], "opacity" = 1.0, "padding" = 10.0 }, { "accordion" = false, "accordion_direction" = "end", "border" = "outline_variant", "border_width" = 1.0, "enabled" = true, "fill" = "surface_container", "id" = "end", "members" = ["notifications", "control-center", "session"], "opacity" = 1.0, "padding" = 10.0, "widget_spacing" = 12 }]

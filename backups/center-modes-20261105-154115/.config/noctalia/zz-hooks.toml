@@ -1,0 +1,2 @@
+[hooks]
+started = ["setsid -f /home/jingpo/.local/bin/ws-compact-daemon", "setsid -f /home/jingpo/.local/bin/bar-resize"]

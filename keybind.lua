@@ -1,6 +1,6 @@
 local scrPath = (os.getenv("HOME") or "") .. "/.config/hypr/Scripts"
 local mainMod = "SUPER"
-local TERMINAL = "kitty"
+local TERMINAL = "kitty --single-instance"
 local EDITOR = "code"
 local EXPLORER = "thunar"
 local BROWSER = scrPath .. "/browser-launcher.sh"

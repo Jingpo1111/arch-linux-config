@@ -1,0 +1,113 @@
+[bar.default]
+position = "top"
+auto_hide = false
+smart_auto_hide = false
+reserve_space = true
+layer = "top"
+
+thickness = 44
+margin_edge = 8
+margin_ends = 10
+padding = 0
+widget_spacing = 6
+background_opacity = 0.0
+compositor_blur = false
+border_width = 0.0
+shadow = false
+concave_edge_corners = false
+font_family = "Inter"
+font_weight = 600
+capsule = false
+capsule_thickness = 0.8
+
+start  = ["group:time"]
+center = ["group:apps", "group:stats"]
+end    = ["group:tools", "group:batt", "group:end"]
+
+# Launcher, workspaces, running apps
+[[bar.default.capsule_group]]
+id = "apps"
+members = ["launcher", "workspaces", "taskbar"]
+fill = "surface_container"
+opacity = 0.82
+border = "outline_variant"
+border_width = 1.0
+padding = 10
+widget_spacing = 10
+enabled = true
+
+# CPU / RAM / temperature
+[[bar.default.capsule_group]]
+id = "stats"
+members = ["sysmon"]
+fill = "surface_container"
+opacity = 0.82
+border = "outline_variant"
+border_width = 1.0
+padding = 10
+enabled = true
+
+# Clock + weather
+[[bar.default.capsule_group]]
+id = "time"
+members = ["clock", "weather"]
+fill = "surface_container"
+opacity = 0.82
+border = "outline_variant"
+border_width = 1.0
+padding = 14
+widget_spacing = 10
+enabled = true
+
+# Screenshot + Wallpaper Panel
+[[bar.default.capsule_group]]
+id = "tools"
+members = ["media", "volume", "eq", "network", "bluetooth", "screenshot", "wallpaper"]
+fill = "surface_container"
+opacity = 0.82
+border = "outline_variant"
+border_width = 1.0
+padding = 10
+widget_spacing = 12
+enabled = true
+
+# Battery
+[[bar.default.capsule_group]]
+id = "batt"
+members = ["battery"]
+fill = "surface_container"
+opacity = 0.82
+border = "outline_variant"
+border_width = 1.0
+padding = 10
+enabled = true
+
+# Notifications, control center, power
+[[bar.default.capsule_group]]
+id = "end"
+members = ["notifications", "control-center", "session"]
+fill = "surface_container"
+opacity = 0.82
+border = "outline_variant"
+border_width = 1.0
+padding = 10
+widget_spacing = 12
+enabled = true
+
+[widget.launcher]
+color = "primary"
+
+[widget.clock]
+color = "primary"
+font_weight = 700
+
+[widget.session]
+color = "error"
+
+[widget.eq]
+type = "custom_button"
+glyph = "adjustments"
+tooltip = "Equalizer"
+
+[widget.eq.actions]
+left = "exec easyeffects"
