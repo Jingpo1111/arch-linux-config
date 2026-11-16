@@ -15,9 +15,9 @@ hl.window_rule({ match = { class = "^org\\.pulseaudio\\.pavucontrol$" },        
 hl.window_rule({ match = { title = "^File Operation Progress$" },                         float = true, size = "600 50", })
 hl.window_rule({ match = { class = "^xfce-polkit$" },                                     float = true, size = "600 50", })
 hl.window_rule({ match = { class = "^blueman-manager$" },                                 float = true, size = "600 300", })
-hl.window_rule({ match = { title = "^Choose files to upload$" },                          float = true, size = "800 500", no_anim = true, no_shadow = true, border_size = 0, no_blur = true, center = 1, })
+hl.window_rule({ match = { title = "^Choose files to upload$" },                          float = true, size = "800 500", no_anim = true, no_shadow = true, border_size = 0, no_blur = true, center = true, })
 hl.window_rule({ match = { title = "^All Files$" },                                       float = true, size = "800 600", })
-hl.window_rule({ match = { title = "^Affinity Photo 2$" },                                no_anim = true, no_shadow = true, border_size = 0, no_blur = true, no_dim = true, immediate = true, decorate = false, opaque = true, tonemap = off, })
+hl.window_rule({ match = { title = "^Affinity Photo 2$" },                                no_anim = true, no_shadow = true, border_size = 0, no_blur = true, no_dim = true, immediate = true, decorate = false, opaque = true, })
 
 
 hl.window_rule({ match = { class = "^[Ss]team$", title = "^Steam Settings$" }, float = true })

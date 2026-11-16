@@ -51,8 +51,6 @@ hl.config({
     },
 })
 
--- For Noctalia Color templates
-require("noctalia").apply_theme()
 
 
 
@@ -84,3 +82,6 @@ if not ok2 then
     if f then f:write(tostring(err2)) f:close() end
 end
 
+
+-- For Noctalia Color templates
+require("noctalia").apply_theme()
